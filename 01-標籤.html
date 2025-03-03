@@ -1,0 +1,111 @@
+<!-- <!DOCTYPE html>:代表網頁文黨類型，申明瀏覽器的代碼規則 -->
+<!DOCTYPE html>
+
+<!-- <html>:根標籤，每個網頁只有一個 -->
+<!-- lang="en" 代表當前網頁為英文-->
+<html lang="en">
+<!-- <head>:代表網頁的頭部 title代表網頁標題，內容會顯示在窗口欄上 -->
+
+<head>
+    <!-- 定義當前網頁的編輯碼 -->
+    <meta charset="UTF-8">
+    <!-- 專門針對ie瀏覽器，代表已edge版來顯示頁面 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 針對移動端布局，開啟理想窗口 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 定義網頁關鍵字，作為搜寻引擎，有利於seo優化 -->
+    <meta name="keywords" content="111,222,333">
+    <!-- 定義網頁的描述 -->
+    <meta name="description" content="教學測試用途">
+    <!-- 網頁標題，會顯示在網頁窗口欄 -->
+    <title>教學</title>
+
+</head>
+<!-- <body>:代表網頁的主體 -->
+
+<body>
+    正常文本
+    <!-- 標題標籤:h1~h6 數字越大 字體越小 默認上下有間距-->
+    <h1>h1標籤</h1>
+    <h2 id="h2">h2標籤</h2>
+    <h3>h3標籤</h3>
+    <h4>h4標籤</h4>
+    <h5>h5標籤</h5>
+    <h6>h6標籤</h6>
+
+    <!-- 段落標籤:p 一個段落需要一個p標籤 獨佔一行 默認上下有間距-->
+    <!-- ※注意 p標籤不能相互連套 -->
+    <p id="p1">
+        維基百科是一個多語言、內容自由、任何人都能參與的協作計劃，其目標是建立一個完整、準確且中立的百科全書。
+    </p>
+    <p>
+        維基百科是一個多語言、內容自由、任何人都能參與的協作計劃，其目標是建立一個完整、準確且中立的百科全書。
+    </p>
+
+    <!-- span標籤:存放一些簡單的文本或者提示性訊息，可以同行顯示-->
+    <span>span1</span>
+    <span>span2</span>
+
+    <!-- label標籤:有特殊用法，可配合表單一起使用，來控制表單元素，可同行顯示 -->
+    <!-- for="":標籤上屬性-->
+    <label for="">label1</label></label>
+
+    <!-- 換行:br -->
+    <br>
+
+    <!-- 加粗標籤:b/strong 同行顯示-->
+    <b>粗體</b>
+    <strong>粗體</strong>
+
+    <!-- 斜體:i/em 同行顯示 -->
+    <i>斜體</i>
+    <em>斜體</em>
+
+    <!-- 分割線:hr -->
+    <hr>
+
+    <!-- 圖片標籤:img -->
+    <!-- 
+        路徑:找到文件所在具體位置
+            絕對路徑:只目標文件所在具體位置，開發中，指https或http開頭路徑或硬碟路徑
+            相對路徑:以某文件做為參考的對應路徑，開發中，指當前文案找到文件路徑
+            返回上一層:../
+     -->
+    <!-- 
+        src:連接圖片的文件路徑 
+        alt:圖片加載失敗時顯示說明文字
+        title:圖片加仔成功鼠標移入時顯示文字
+        width:設置寬度
+        height:設置高度
+     -->
+
+    <img src="https://y.qq.com/music/photo_new/T001R300x300M000002clPMP0PgJr6.jpg?max_age=2592000" alt="" title="ZDN"
+        width="300px">
+    <img src="img/20230205_fs_DK_04.jpg" alt="" title="DK" width="300px">
+    
+    <hr>
+    <!-- 超連結標籤:a -->
+    <!-- 
+        href:連結需要跳轉的網頁路徑，路徑可以是http或https，也可以是本地路徑
+        target:控制新開網頁的開啟方式;_self:當前窗口打開網頁;_blank:新開窗口打開網頁
+        ※注意:href=""或者href="#":刷新當前頁面
+     -->
+    <a href="http://www.snh48.com/member_details.html?sid=30032#SNH" target="_blank">鄭丹妮 GNZ48官網</a>
+    <br>
+    <a href="03-表單組件.標籤.html">表單組件網頁</a>
+    <br>
+    <!-- 
+        id命名規則:
+            是以數字、字母、_和-構成
+            不能以數字開頭，不能包含特殊符號
+     -->
+     <!-- 錨點: 以#id名:可以指定跳轉到指定位置 -->
+    <a href="#h2">跳轉到h2標籤位置</a>
+    <br>
+    <a href="#top">返回頂部</a>
+    <br>
+    <a href="03-表單組件.標籤.html#stage">表單組件網頁的舞台</a>
+
+</body>
+
+</html>
